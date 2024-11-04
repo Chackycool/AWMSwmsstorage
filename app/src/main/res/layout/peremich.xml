@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Верхній EditText -->
+    <EditText
+        android:id="@+id/Search1"
+        android:layout_width="match_parent"
+        android:background="@color/colorSelectedItemBackground"
+        android:textColorHint="@color/black"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:hint="Звідки" />
+
+    <!-- Верхній RecyclerView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Нижній EditText -->
+    <EditText
+        android:id="@+id/Search2"
+        android:background="@color/colorSelectedItemBackground"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:hint="Куди" />
+
+    <!-- Нижній RecyclerView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

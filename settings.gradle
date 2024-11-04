@@ -1,0 +1,4 @@
+include ':jtds-1.3.0'
+include ':sqljdbc4-2.0'
+include ':app'
+rootProject.name = "wmsstorage"

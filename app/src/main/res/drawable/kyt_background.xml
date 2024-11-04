@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/white" /> <!-- Встановлення білого фону -->
+    <item>
+        <rotate
+            android:fromDegrees="43"
+            android:toDegrees="45"
+            android:pivotX="90%"
+            android:pivotY="16%">
+            <shape
+                android:shape="rectangle">
+                <solid android:color="#00BFFF" /> <!-- Колір заповнення -->
+            </shape>
+        </rotate>
+    </item>
+</layer-list>

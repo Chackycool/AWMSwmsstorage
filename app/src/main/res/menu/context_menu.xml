@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/changeQty"
+        android:title="Змінити Кількість" />
+    <item
+        android:id="@+id/changeName"
+        android:title="Змінити назву" />
+    <item
+        android:id="@+id/ShowDetails"
+        android:title="Подробиці" />
+    <item
+        android:id="@+id/delete"
+        android:title="Видалити" />
+    <!-- Додайте інші пункти меню, які вам потрібно -->
+</menu>

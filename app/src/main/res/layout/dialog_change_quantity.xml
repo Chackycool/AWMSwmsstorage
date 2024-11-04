@@ -1,0 +1,67 @@
+    <!-- dialog_change_quantity.xml -->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#5f5f5f"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewOldQuantity"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Стара кількість: 10" />
+
+        <TextView
+            android:id="@+id/textViewNewQuantityLabel"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Нова кількість" />
+
+        <EditText
+            android:id="@+id/editTextNewQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:inputType="numberDecimal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/save"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/success_bg_color"
+            android:onClick="save"
+            android:text="Зберегти" />
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/back"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:onClick="back"
+            android:backgroundTint="@color/success_bg_color"
+            android:text="Вийти" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

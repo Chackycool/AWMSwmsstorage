@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_house"
+            android:title="Home"
+            />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/nav_settings"
+            android:title="Settings"
+            />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/nav_share"
+            android:title="Share"
+            />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/nav_about"
+            android:title="Version 30.03.2024"
+            />
+    </group>
+    <item
+        android:title="">
+        <menu>
+          <item
+              android:id="@+id/nav_cancel"
+              android:icon="@drawable/nav_cancel"
+              android:title="Logout"
+              />
+        </menu>
+    </item>
+
+</menu>

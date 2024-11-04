@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WMS</string>
+    <string name="whVer">Версія:</string>
+    <string name="name1">Warehouse Management System</string>
+    <string name="name2">(WMS)</string>
+    <string name="DashBoard">Меню</string>
+    <string name="title_activity_peremich">Peremich</string>
+</resources>

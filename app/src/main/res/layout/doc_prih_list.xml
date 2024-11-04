@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/refresh"
+    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="filterAndSort"
+            android:src="@drawable/filter_sort" />
+
+        <EditText
+            android:layout_weight="3"
+            android:id="@+id/searchDcc"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/black"
+            android:textColorHint="@color/black"
+            android:hint="№ Документу"
+            android:gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/search_b"
+            android:onClick="Search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="53dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycle"
+        android:layout_above="@+id/button"
+        android:background="@color/white"
+        android:layout_weight="1" />
+    <Button
+        android:id="@+id/buttonStartWork"
+        android:layout_width="match_parent"
+        android:onClick="StartWorkPrih"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginBottom="-6dp"
+        android:backgroundTint="#00BFFF"
+        android:fontFamily="@font/bebas_neue"
+        android:text="Почати"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

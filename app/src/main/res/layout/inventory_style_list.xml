@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/colorNormalItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/Minus"
+            android:layout_width="10dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="-15dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/minus"
+            android:layout_gravity="center_vertical"/>
+        <!-- Ліва частина -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <!-- Перший текстовий віджет з вирівнюванням тексту по лівій стороні -->
+
+            <TextView
+                android:id="@+id/ProdName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Перший текст"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <!-- Другий текстовий віджет з вирівнюванням тексту по центру -->
+        <TextView
+            android:id="@+id/QTY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="34"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+           />
+
+        <!-- Кнопка-хрестик -->
+        <ImageView
+            android:id="@+id/Plus"
+            android:layout_width="40dp"
+            android:layout_weight="1"
+
+            android:layout_height="match_parent"
+            android:src="@drawable/plus"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
